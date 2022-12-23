@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../l-s/css1.css">
+    <!--lebary-->
+    <title>تفاوت النمو بين الشمال والجنوب (المجال المتوسطي نموذجا)</title>
+
+<style type="text/css" media="all">
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(239, 239, 239);
+}
+#mok{
+    width:75%; margin:auto; padding:8px;font-size: 18px;margin-bottom: 5px;margin-left: -70px;
+}
+#mok u{
+    text-decoration: none;
+    border-bottom: 3px solid #ff465a;
+    border-radius: 0 0 10px 10px;
+    padding: 0 8px 4px 5px;
+}
+#mok::before{
+    content: '◈ ';
+    font-size: 19px;
+}
+.full{
+    height: 100%;
+    width: 100%;
+}
+.full .menu{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    border: 3px double black;
+    direction: rtl;
+    text-align: center;
+    overflow:auto;
+    padding-top: 5px;
+}
+.full .menu .fahras li{
+    color: #ff465a;
+    margin-bottom: 7px;
+}
+.full .menu .fahras li u{
+    text-decoration: none;
+    border-radius: 0;
+    padding: 0 5px 3px 5px;
+}
+.full .menu .fahras li a{
+    text-decoration: none;
+    color: #000;
+}
+.full .menu .fahras li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+/*end menu 1*/
+.drs{
+    width: 64%;
+    height: auto;
+    margin: 18px 0 0 5px;
+    float: left;
+    border: 1px solid #000;
+    border-radius: 0 15px 0 15px;
+    padding: 0 5px 2px 4px;
+}
+fieldset{
+    width: 550px;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 2px 3px 3px rgb(124, 122, 122);
+}
+.ex{
+    text-align: center;
+    font-size: 25px;
+    color: #cf0083eb;
+    margin-bottom: 5px;
+    height: auto;
+    padding: 0 5px;
+    font-weight: 600;
+}
+.p-ex li{
+    padding-right: 10px;
+   margin-bottom: 6px;
+   font-size: 17px;
+   font-weight: 555;
+   color: rgb(50, 50, 102);
+} 
+.p-ex p{
+   color: rgb(52, 52, 169);
+   margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: 555;
+    text-decoration: underline;
+}
+.p-ex p::before{
+    content: '♥';
+    font-size: 17px;
+    padding-left: 5px;
+}
+/**/
+.f{
+    width: 550px;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 2px 3px 3px rgb(124, 122, 122);
+    background-color: lightgrey;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    border-radius: 10px;
+}
+.img-entre-txt{
+    position: relative;
+}
+.for-phone{
+    display: block;
+}
+.ex2{
+    text-align: center;
+    font-size: 25px;
+    color: #cf0083eb;
+    margin-bottom: 5px;
+    height: auto;
+    padding: 0 5px;
+    font-weight: 600;
+}
+.p-ex2 li{
+    padding-right: 10px;
+   margin-bottom: 6px;
+   font-size: 17px;
+   font-weight: 555;
+   color: rgb(50, 50, 102);
+} 
+.p-ex2 p{
+   color: rgb(52, 52, 169);
+   margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: 555;
+    text-decoration: underline;
+}
+.p-ex2 p::before{
+    content: '♥';
+    font-size: 17px;
+    padding-left: 5px;
+}
+.khatita{
+    width: 98%;
+    margin: auto;
+    height: 85%;
+    object-fit: fill;
+}
+.solam{
+    width: 98%;
+    height: 85%;
+    object-fit: fill;
+}
+.def-color{
+    color: rgb(35, 35, 169);
+}
+.kharita-phone{
+    display: block;
+}
+.footer{
+    float: right;
+    width: 34%;
+    margin: 18px 5px 0 0;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 0 15px 15px 15px;
+    padding: 0 0 4px 0;
+}
+.clear{
+    clear: both;
+}
+.title h1{
+    text-align: center;
+    color: red;
+    width: 80%;
+    border: 1px solid #000;
+    margin: 5px auto 0;
+    padding: 1px 0 4px 0;
+}
+.one-large{
+    color: red;
+    font-weight: 640;
+    letter-spacing: 1px;
+    font-size: 19px;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+.one-large li::after{
+    font-weight: 640;
+    content: ':';
+}
+.one-small{
+    color: green;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.one-small li::after{
+    content: ':';
+    margin-right: 4px;
+    font-size: 22px;
+}
+.courses{
+    text-align: justify;
+    font-size: 23px;
+}
+.mo-kha{
+    color: rgb(241, 29, 29);
+    font-size: 27px;
+    margin-right: 15px;
+    font-weight: 555;
+}
+#mo-p{
+    text-align: justify;
+   font-size: 23px; 
+   font-weight: normal;
+}
+#mo-p span{
+    color: rgb(21, 45, 162);
+}
+#li2{
+    visibility:hidden;
+    margin-top: -23px;
+}
+/*footer*/
+.footer marquee{
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 98%;
+    margin: 3px;
+    border-radius: 0 7px 7px 7px;
+    box-shadow: 2px 2px 8px rgb(164, 162, 162),-2px -2px 8px rgb(164, 162, 162);
+    
+}
+.foot{
+    width: 98%;
+    margin: 0 auto 3px;
+    height: 110px;
+    border-radius: 0 15px 15px 15px;
+    text-align: center;
+    line-height: 110px;
+}
+.img-ft{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    border-radius: 0 15px 15px 15px;
+    box-shadow: 6px 8px 9px rgb(33, 32, 32);
+}
+.foot i{
+    font-size: 29px;
+    margin-left: 8px;
+    transition:all 0.3s;
+}
+.foot i:hover{
+    transform:translate(0,-3px);
+}
+.copy{
+    width: 98%;
+    height: 40px;
+    margin: auto;
+    border-radius: 0 7px 7px 7px;
+    direction: rtl;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 1px 1px 3px,-1px -1px 3px;
+}
+.copy p{
+    line-height: 40px;
+}
+.copy span{
+    text-decoration: underline;
+}
+.copy span:hover{
+    color: rgb(59, 59, 196);
+    cursor: pointer;
+}
+
+/*
+##############################"      MEDIA QURIES      ###########################
+*/
+@media screen and (max-width:700px){
+    .full .menu {
+        width: 98%;
+        height: auto;
+    }
+    #mok{
+        margin-left: 82px;
+    }
+    .drs {
+        width: 98%;
+        clear: both;
+    }
+    .footer{
+        width: 98%;
+    }
+    fieldset {
+        width: 98%;
+    }
+    .for-phone{
+        display: block;
+    }
+    .img-entre-txt{
+        display: none;
+    }
+    .space{
+        display: none;
+    }
+    .kharita-phone{
+        display: block;
+    }
+}
+@media screen and (min-width:701px) and (max-width:875px){
+    fieldset {
+        width: 98%;
+    } 
+    .for-phone{
+        display: block;
+    }
+    .img-entre-txt{
+        display: none;
+    }
+    .space{
+        display: none;
+    }
+    .kharita-phone{
+        display: block;
+    }
+}
+</style>
+</head>
+<body>
+    <p id="mok" dir="rtl"><u>مكونات الدرس :</u></p>
+<section class="full">
+    <div class="menu">
+        <div class="fahras">
+                <li type="1"><a href="#one-kabira"><u>خصائص المجال المتوسطي ومؤهلاته.</u></a></li>
+                <li type="1"><a href="#tho-kabira"><u>مظاهر التفاوت بين بلدان المجال المتوسطي.                 </u></a></li>
+                <li type="1"><a href="#three-kabira"><u>أهمية التعاون الأورمتوسطي حصيلته وآفاقة .                </u></a></li>
+        </div>
+    </div>
+    <!---->
+    <section class="drs" dir="rtl">
+        <div class="title">
+            <h1>تفاوت النمو بين الشمال والجنوب(المجال المتوسطي نموذجا)
+            </h1>
+        </div>
+        <br>
+        <fieldset><legend class="ex">☼</legend>
+            <div class="p-ex">
+                <li type="1">أذكر المجالات التي ينقسم إليها المجال العالمي في إطار العولمة وخصائص كل مجال.
+                </li>
+                <li type="1">عرف بالمجال المتوسطي.
+                </li>
+                <li type="1">أبرز مستوى التنمية البشرية بين ضفتيه.
+                </li>
+                <li type="1">فسر ذلك.
+                </li>
+            </div>
+        </fieldset>
+        <br>
+        <div class="mo-kha">مقدمة :</div>
+        <p id="mo-p">&nbsp;&nbsp;&nbsp;&nbsp;يتميز العالم بتباين كبير بين الدول المتقدمة والدول النامية، على مستويات متعددة، ويعد المجال المتوسطي أنموذجا واضحا لهذا التباين .
+            <span>فما هي خصائص المجال المتوسطي ؟ وما مظاهر التفاوت بين ضفتي المتوسط ؟ وما المجهودات المبذولة لتقليصه ؟
+            </span></p>
+        <br>
+        <div class="one-large">
+            <li id="one-kabira" type="I">خصائص المجال المتوسطي ومؤهلاته 
+            </li>
+        </div>
+     <div class="one-small">
+            <li type="1">الامتداد الجغرافي للمجال المتوسطي </li>
+        </div>
+        <br>
+        <fieldset><legend class="ex">التمرين رقم 1 :</legend>
+        <div class="p-ex">
+            <p>اقرأ الوثيقة 1 في الصفحة 37 ثم اجب عن الأسئلة التالية : </p>
+            <li type="1"> حدد موضوع الخريطة .</li>
+            <li type="1"> حدد الدول التي يتشكل منها المجال المتوسطي. </li>
+            <li type="1"> حدد القارات التي تنتمي إليها دول المتوسط.</li>
+        </div>
+        </fieldset>
+        <br>
+        <div class="courses">
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;يمتد المجال المتوسطي على مساحة مهمة ، تشمل المناطق المحيطة بالبحر الأبيض المتوسط ، يتشكل من 22 دولة ، بعضها ينتمي للضفة الشمالية الأوربية (اسبانيا ، فرنسا ، ايطاليا ، اليونان ، قبرص ومالطا وبعض دول البلقان ) والبعض الأخر للضفة الإفريقية والأسيوية (دول شمال إفريقيا ، فلسطين ، سوريا  لبنان ، تركيا ، إسرائيل ).
+        </div>
+        <div class="one-small">
+            <li id="li2" type="1"></li>
+            <li type="1">الخصائص المشتركة للمجال المتوسطي ومؤهلاته الاقتصادية </li>
+        </div>
+            <br>
+            <fieldset><legend class="ex">التمرين رقم 2 :</legend>
+            <div class="p-ex">
+                <p>اقرأ الوثيقة 1 ص38:</p>
+                <li type="1"> حدد موضوع الخريطة .</li>
+                <li type="1"> حدد أنواع المناخات المنتشرة في المجال المتوسطي.</li>
+                <li type="1"> استنتج الخاصية الطبيعية المشتركة بين معظم البلدان المتوسطية..</li>
+            </div>
+            </fieldset>
+            <br>
+           <img class="kharita" width="98%" height="85%" src="kharita1.jpg" style="object-fit:fill;" alt="" />
+        <!--for andoid-->
+        <div class="for-phone">
+            <fieldset><legend class="ex">⨮</legend>
+            <div class="p-ex">
+                <p>من خلال الخريطة 2(أ)  ص38 :</p>
+                <li type="1"> استخرج المقومات البشرية للمجال المتوسطي، واستنتج أهمية ذلك.</li>
+            </div>
+            </fieldset>
+        </div>
+            <br><br>
+            <fieldset><legend class="ex">التمرين رقم 3 :</legend>
+                <div class="p-ex">
+                <p>من خلال النص والصورة في الصفحة 39:</p>
+                <li type="1"> أبرز بعض الخصائص التاريخية للمجال المتوسطي</li>
+                <li type="1"> استنتج  انعكاسات هذه الخصائص على المجال المتوسطي.</li>
+            </div>
+                </fieldset>
+                <br>
+                <img class="solam" src="solam1.jpg" alt="">
+                <br>
+        <div class="courses">
+            <span class="space">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="def-color">- الخصائص الطبيعية</span> : يتميز المجال المتوسطي بمناخ متوسطي معتدل ومطير شتاء وحار وجاف صيفا ، وبتضاريس متنوعة تجمع بين الجبال والسهول . كما ينتشر في هذا المجال غطاء نباتي متوسطي يتميز بالتنوع والتدرج حسب الارتفاع ( الحوامض ، الزيتون ، الكروم ...) .
+            <br>
+            <span class="space"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="def-color">- الخصائص البشرية والتاريخية </span> : يتميز المجال المتوسطي بارتفاع عدد السكان( حوالي 500 م ن)، وبعدة عادات وتقاليد متقاربة مشتركة مستمدة من الحضارات المتعاقبة على الفضاء المتوسطي كالحضارة الفنيقية، القرطاجية، الامازيغية، الإغريقية، الرومانية، الإسلامية ... كما يعد أيضا مهدا للديانات السماوية الثلاث ، مما يؤهله ليكون فضاء للتسامح والتعايش.
+            <br>
+            <span class="space"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="def-color">- المقومات الاقتصادية </span> وفرة مصادر الطاقة والمعادن خاصة  في جنوب وشرق المتوسط ، مساحة مهمة من الأراضي الخصبة ، الموقع الاستراتيجي في التجارة الدولية ، إذ توجد فيه أهم الممرات التجارية في العالم ( طارق – قناة السويس – الدردنيل - البوسفور )... 
+<br>
+        </div>
+        <div class="one-large">
+            <li id="li2"></li>
+            
+            <li id="tho-kabira" type="I">مظاهر التفاوت بين بلدان المجال المتوسطي </li>
+        </div>
+        <div class="courses">
+            <fieldset><legend class="ex">⨮</legend>
+            <div class="p-ex">
+                <p>من خلال الخريطة في الوثيقة 1 والوثيقة 1( أ-ب)، ص43:</p>
+                <li type="1">حدد موضوع الوثيقتين.</li>
+                <li type="1">أبرز  مظاهر التباينات المجالية بين ضفتي المتوسط.</li>
+                <li type="1">صنف بلدن المجال المتوسطي بضفتيه حسب اندماجها في إطار العولمة.</li>
+            </div>
+            </fieldset>
+        </div>
+        <br>
+        <fieldset><legend class="ex">⨮</legend>
+            <div class="p-ex">
+                <p>من خلال الوثيقتين 2، ص44:                </p>
+                <li type="1">حدد موضوع الوثائق وأبرز المجال الذي ينتمي إليه.                </li>
+                <li type="1"> قارن المؤشرات الديمغرافية بين دول ضفتي المتوسط: عدد السكان، بنية الهرم السكاني، وفسر ذلك.                </li>
+                <p>من خلال الوثيقة 3 (أ-ب) الصفحتين 44-45:                </p>
+                <li type="1"> قارن مؤشر التنمية البشرية بين بلدان شمال وجنوب المتوسط وفسر ذلك.                </li>
+            </div>
+            </fieldset>
+        </div>
+        <br>
+        <fieldset><legend class="ex">⨮</legend>
+        <div class="p-ex">
+            <p>من خلال الوثيقة 1 ص45، والوثيقة 3 ص46:            </p>
+            <li type="1"> ستخرج عناصر التباين الاقتصادي بين دول ضفتي المجال المتوسطي.            </li>
+            <li type="1"> ميز من خلال و3ص46، بين بنية التجارة الخارجية لضفتي المتوسط وفسر ذلك.            </li>
+            <li type="1"> تحدث عن الوضعية الاقتصادية لبلدان جنوب المتوسط مقارنة مع بلدان شماله</li>
+        </div>
+        </fieldset>
+        <div class="courses">
+            <br>
+           <span class="space"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="def-color">• على مستوى الاجتماعي : </span>تتميز دول جنوب المتوسط بارتفاع التزايد الطبيعي ومعدل الخصوبة (2,1 الى3,5 طفل)، وبالتالي ارتفاع سريع في عدد السكان ، وهيمنة الفئة الشابة والنشيطة (أكثر من 30%  أطفال)، مقابل ذلك ينخفض معدل الخصوبة في الضفة الشمالية (1.5 الى2 طفل) ، مما ساهم في تراجع النمو السكاني وشيخوخة المجتمع . كما ينخفض مؤشر التنمية البشرية في الضفة الجنوبية والشرقية إذ لا يتعدى 0.7 ، ويرتفع في دول الضفة الشمالية ليصل إلى 0.9.
+            <br>
+            <span class="space">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="def-color">• على مستوى  المجال : </span>تتكون دول شمال المتوسط من بلدان متقدمة ومندمجة في العولمة بشكل مستقل، في حين تتكون بلدان الجنوب من بلدان نامية أو في طور النمو، كما نجد دول الضفة الشمالية ذات مجال متطور ومنظم يتوفر على البنية التحتية والخدمات الأساسية، بينما نجد في الضفة الجنوبية سيادة مجال غير متطور أو في طور التطور ، يطغى عليه العشوائية ويفتقر للبنيات والخدمات الأساسية خاصة في المناطق القروية والجبلية.
+            <br>
+            <span class="space"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span class="def-color">• على المستوى الاقتصادي : </span>تعاني دول الضفة الجنوبية من نقص الإنتاج الفلاحي وضعف التصنيع إضافة إلى قلة مساهمتها في التجارة الدولية، وانخفاض الناتج الداخلي الخام ، أما بالنسبة للضفة الشمالية فتتميز بقوة التصنيع خاصة الدول الكبرى (فرنسا ، ايطاليا ...) وتحقق فائض فلاحي وارتفاع حجم الناتج الداخلي الخام.
+
+        </div>
+        <br>
+        <div class="one-large">
+            <li id="li2"></li>
+            <li id="li2"></li>
+            <li id="three-kabira" type="I">أهمية التعاون الأورمتوسطي حصيلته وآفاقة </li>
+        </div>
+        <br>
+        <fieldset><legend class="ex">⨮</legend>
+        <div class="p-ex">
+            <p>من خلال الوثيقة 1 ص46، والوثيقة 3(ب) ص47، الوثيقة 4 ص51:</p>
+            <li type="1"> حدد الفكرة العامة للوثيقتين.            </li>
+            <li type="1"> أبرز التحديات المشتركة بين بلدان حوض الأبيض المتوسط.</li>
+            <li type="1"> استخرج مظاهر التعاون الأورمتوسطي.            </li>
+            <li type="1"> استنتج أهداف التعاون.            </li>
+        </div>
+        </fieldset>
+        <br>
+        <fieldset><legend class="ex">⨮</legend>
+            <div class="p-ex">
+                <p>من خلال الوثيقة 2 ص49 :                </p>
+                <li type="1"> استنتج حصيلة التعاون الأورمتوسطي.                </li>
+                <li type="1"> فسر هذه الحصيلة.                </li>
+            </div>
+            </fieldset>
+            <br>
+            <div class="courses">
+                تعمل دول المتوسط على تقوية التعاون في ما بينها ومن مظاهر ذلك، عقد مؤتمرات <span class="def-color">كمؤتمر برشلونة </span>سنة 1995م لوضع أسس التعاون، إحداث <span class="def-color">منتدى 5+ 5</span>، ثم اعتماد برامج للتنمية مثل <span class="def-color">برنامج ميدا ...</span>
+                <br>
+                ترتب عن هذا التعاون تقديم دول الضفة الشمالية عشرات المليارات من الأورو لدول الجنوب لتمويل مشاريع في مجالات مختلفة اقتصادية واجتماعية وبيئية، مما انعكس إيجابا على مؤشرات التنمية بها، كما تسعى دول المتوسط إلى <strong>إنشاء منطقة للتبادل الحر </strong>تجمع الدول المتوسطية، وإقامة مشاريع مشتركة للطاقات المتجددة ...       
+                <br>
+                لكن هناك عدة معيقات تحول دون ذلك منها تراجع المساعدات الأوربية بعد التوسع باتجاه أوربا الشرقية، <strong>الصراع العربي الإسرائيلي </strong>، الصراع بين دول الضفة الجنوبية (المغرب والجزائر) ، غياب الديمقراطية واحترام حقوق الإنسان في الجنوب... مما ساهم في استمرار ظاهرة الهجرة السرية، تهريب المخدرات ، الاضطرابات السياسية ... 
+
+            </div>
+        <div class="mo-kha">خاتمة :</div>
+        <div class="courses">
+            <p>رغم الخصائص الطبيعية والإرث التاريخي المشترك، والمؤهلات الاقتصادية التي يتوفر عليها المجال المتوسطي، إلا أن درجة التنمية الاقتصادية والبشرية لازالت متباينة بين ضفتيه الشمالية والجنوبية، مما يؤدي إلى استمرار مجموعة من التحديات التي يواجهها هذا الفضاء .</p>
+        </div>
+    </section>
+        <div class="footer">
+            <marquee dir="rt" behavior="alternate" direction="">🌐 هل لديك سؤال بخصوص هذا الدرس ؟ تواصل معنا </marquee>
+            <br>
+            <div class="foot">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </div>
+            <div class="copy">
+                <p>جميع الحقوق محفوضة <span> Nabil-Uduc-HG</span>&nbsp;©&nbsp;2022</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+</section>
+
+<script src="../l-s js offl/soci.js"></script>
+</body>
+</html>
